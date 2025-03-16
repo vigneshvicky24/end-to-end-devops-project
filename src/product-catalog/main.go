@@ -228,7 +228,6 @@ func mustMapEnv(target *string, key string) {
 	if !present {
 		log.Fatalf("Environment Variable Not Set: %q", key)
 	} 
-	
 	*target = value
 }
 
