@@ -179,8 +179,6 @@ type productCatalog struct {
 }
 
 
-//change
-
 
 func readProductFiles() ([]*pb.Product, error) {
 
