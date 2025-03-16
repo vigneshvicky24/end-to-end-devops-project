@@ -178,6 +178,10 @@ type productCatalog struct {
 	pb.UnimplementedProductCatalogServiceServer
 }
 
+
+//change
+
+
 func readProductFiles() ([]*pb.Product, error) {
 
 	// find all .json files in the products directory
@@ -223,7 +227,8 @@ func mustMapEnv(target *string, key string) {
 	value, present := os.LookupEnv(key)
 	if !present {
 		log.Fatalf("Environment Variable Not Set: %q", key)
-	}
+	} 
+	
 	*target = value
 }
 
